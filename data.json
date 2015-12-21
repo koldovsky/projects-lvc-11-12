@@ -1,0 +1,154 @@
+[
+    {
+        'subgroup': 1,
+        'name': 'Anastasiia Goncharova',
+        'codeSourceUrl': 'https://github.com/anastasiagoncharova/Myweather',
+        'websiteUrl': 'http://anastasiagoncharova.github.io/Myweather/',
+        'cvurl': 'https://www.dropbox.com/s/oguwlvthzcqmtbv/Goncharova_CV.pdf?dl=0'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Dmytro Matiichuk',
+        'codeSourceUrl': 'https://github.com/Dimas169/weather.html.git',
+        'cvurl': 'https://www.dropbox.com/s/szcu07gx9jhdq8v/CV_Matiichuk.pdf?dl=0'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Iryna Dragan',
+        'codeSourceUrl': 'https://github.com/iradragan/weather_sketch.git',
+        'websiteUrl': 'http://iradragan.github.io/weather_sketch'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Marta Dropko',
+        'codeSourceUrl': 'https://github.com/MartaDropko/webweatherforecast',
+        'websiteUrl': 'http://webweatherforecast-martadropko.c9users.io/index.html'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Maksym Piven\'',
+        'codeSourceUrl': 'https://github.com/justmax01/samplesite/tree/gh-pages',
+        'websiteUrl': 'http://justmax01.github.io/samplesite/',
+        'cvurl': 'https://www.dropbox.com/s/vif47n47pk5aeyi/Piven%20Maxym.pdf?dl=0'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Nadiia Shpytkovs'ka',
+        'codeSourceUrl': 'https://github.com/nadinn20/website/blob/gh-pages/index.html',
+        'websiteUrl': 'http://nadinn20.github.io/weather-forecast',
+        'cvurl': 'https://drive.google.com/drive/folders/0BwII8zRpmyg5RVBUNjFvT1kyT1k'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Yaroslav Drahan',
+        'codeSourceUrl': 'https://github.com/yardr/weather_project/tree/gh-pages',
+        'websiteUrl': 'http://yardr.github.io/weather_project',
+        'cvurl': 'https://github.com/yardr/weather_project/tree/gh-pages/My%20CV'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Yaroslav Matushevskyi',
+        'codeSourceUrl': 'https://github.com/matushevskyi/WeatherApp.git',
+        'cvurl': 'https://www.dropbox.com/s/neidlxftyhagsaq/CV_YM_English.pdf?dl=0'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Ihor Zaiats',
+        'codeSourceUrl': 'https://github.com/IgorZayats/MyWeather.git',
+        'websiteUrl': 'http://igorzayats.github.io/MyWeather',
+        'cvurl': 'https://www.dropbox.com/s/1t1ggxw7mkrdxt6/ZayacIM.pdf?dl=0'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Volodymyr Gladiuk',
+        'codeSourceUrl': 'https://github.com/glvolodia/samplewebsite',
+        'websiteUrl': 'http://glvolodia.github.io/samplewebsite'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Vitalii Semeruk',
+        'cvurl': 'https://drive.google.com/drive/folders/0B8IuH1Cl2NqCcVRCZ3Vlbjd4SXM'
+    },
+    {
+        'subgroup': 1,
+        'name': 'Vasylyna Bukartyk',
+        'codeSourceUrl': 'https://github.com/Vasylyna199377/sample',
+        'websiteUrl': 'http://vasylyna199377.github.io/sample',
+        'cvurl': 'https://www.dropbox.com/s/vgrrj6slhpdq98z/Vasylyna%20Bukartyk.pdf?dl=0'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Vasyl Kozhushko',
+        'codeSourceUrl': 'https://github.com/AlexK89/newwebsite/tree/gh-pages',
+        'websiteUrl': 'http://alexk89.github.io/Weather-Project/'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Valentyn Kravchenko',
+        'codeSourceUrl': 'https://github.com/valikwade/weather-project/tree/gh-pages',
+        'websiteUrl': 'http://valikwade.github.io/weather-project/'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Roman Kushka',
+        'codeSourceUrl': 'https://github.com/Milanroman/simplesite',
+        'websiteUrl': 'http://milanroman.github.io/simplesite.',
+        'cvurl': 'https://www.dropbox.com/s/d3win8vauet8ckc/CV__Kushka_Roman.pdf?dl=0'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Roman Golovatyi',
+        'codeSourceUrl': 'https://github.com/SidiromUA/weather/tree/gh-pages',
+        'websiteUrl': 'http://sidiromua.github.io/firstproject/index.html'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Oleksandr Stepanov',
+        'codeSourceUrl': 'https://github.com/OleksandrStepanov/website/tree/gh-pages',
+        'websiteUrl': 'http://oleksandrstepanov.github.io/website',
+        'cvurl': '\nhttps://drive.google.com/file/d/0B3ep8tPz75A1cWZ3bm5aMFk0RjA/view?usp=sharing '
+    },
+    {
+        'subgroup': 2,
+        'name': 'Olia Sheremeta',
+        'codeSourceUrl': 'https://github.com/ollllla/website/tree/gh-pages',
+        'websiteUrl': 'http://ollllla.github.io/website'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Pavlo Bazyliuk',
+        'websiteUrl': 'http://pbazyliuk.github.io/weather-info-project'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Roman Kuchkuda',
+        'codeSourceUrl': 'https://github.com/romko43/forecast/tree/gh-pages',
+        'websiteUrl': 'http://romko43.github.io/forecast/',
+        'cvurl': 'https://drive.google.com/file/d/0BwBtgDApqUiSOVRtOGl5YWotYmM/view?usp=sharing'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Roman Bregey',
+        'codeSourceUrl': 'https://github.com/raamon15/first_website',
+        'websiteUrl': 'http://raamon15.github.io/first_website.',
+        'cvurl': 'https://drive.google.com/open?id=0Bw7RVE2X_29gS1JSU1JrVFhrbVE'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Mykhailo Vlasiuk',
+        'codeSourceUrl': 'https://github.com/MishaVlasiuk/Weather-Lviv',
+        'websiteUrl': 'http://mishavlasiuk.github.io/Weather-Lviv/'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Roman Petryk',
+        'codeSourceUrl': 'https://github.com/Nahtigal/Myweather/tree/gh-pages',
+        'websiteUrl': 'http://nahtigal.github.io/Myweather/'
+    },
+    {
+        'subgroup': 2,
+        'name': 'Khrystyna Danyliuk',
+        'codeSourceUrl': 'https://github.com/kristinadanilyuk/kristina-c/tree/gh-pages',
+        'websiteUrl': 'http://kristinadanilyuk.github.io/kristina-c/'
+    }
+]
