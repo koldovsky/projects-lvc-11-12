@@ -209,8 +209,8 @@ app.service('studentService', ['$q', function($q) {
   {
       'subgroup': 2,
       'name': 'Mykhailo Vlasiuk',
-      'codeSourceUrl': 'https://github.com/MishaVlasiuk/Weather-Lviv',
-      'websiteUrl': 'http://mishavlasiuk.github.io/Weather-Lviv/',
+      'codeSourceUrl': 'https://github.com/MishaVlasiuk/simple-weather',
+      'websiteUrl': 'http://mishavlasiuk.github.io/simple-weather',
       photo: 'images/students/vlasiuk.jpg'
   },
   {
