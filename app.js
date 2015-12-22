@@ -67,8 +67,8 @@ app.service('studentService', ['$q', function($q) {
   {
       'subgroup': 1,
       'name': 'Iryna Dragan',
-      'codeSourceUrl': 'https://github.com/iradragan/weather_sketch.git',
-      'websiteUrl': 'http://iradragan.github.io/weather_sketch',
+      'codeSourceUrl': 'http://github.com/iradragan/weather_project.git',
+      'websiteUrl': 'http://iradragan.github.io/weather_project',
       photo: 'images/students/dragan-iryna.jpg'
   },
   {
@@ -216,7 +216,7 @@ app.service('studentService', ['$q', function($q) {
       'name': 'Roman Petryk',
       'codeSourceUrl': 'https://github.com/Nahtigal/Myweather/tree/gh-pages',
       'websiteUrl': 'http://nahtigal.github.io/Myweather/',
-      photo: 'images/students/no-photo.gif'
+      photo: 'images/students/petryk.jpg'
   },
   {
       'subgroup': 2,
