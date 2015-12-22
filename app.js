@@ -156,7 +156,7 @@ app.service('studentService', ['$q', function($q) {
       'subgroup': 2,
       'name': 'Roman Kushka',
       'codeSourceUrl': 'https://github.com/Milanroman/simplesite',
-      'websiteUrl': 'http://milanroman.github.io/simplesite.',
+      'websiteUrl': 'http://milanroman.github.io/simplesite',
       'cvUrl': 'https://www.dropbox.com/s/d3win8vauet8ckc/CV__Kushka_Roman.pdf?dl=0',
       photo: 'images/students/kushka.jpg'
   },
@@ -200,7 +200,7 @@ app.service('studentService', ['$q', function($q) {
       'subgroup': 2,
       'name': 'Roman Bregey',
       'codeSourceUrl': 'https://github.com/raamon15/first_website',
-      'websiteUrl': 'http://raamon15.github.io/first_website.',
+      'websiteUrl': 'http://raamon15.github.io/first_website',
       'cvUrl': 'https://drive.google.com/open?id=0Bw7RVE2X_29gS1JSU1JrVFhrbVE',
       photo: 'images/students/bregei.png'
   },
