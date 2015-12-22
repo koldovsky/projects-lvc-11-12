@@ -176,7 +176,7 @@ app.service('studentService', ['$q', function($q) {
       'subgroup': 2,
       'name': 'Oleksandr Stepanov',
       'codeSourceUrl': 'https://github.com/OleksandrStepanov/website/tree/gh-pages',
-      'websiteUrl': 'http://oleksandrstepanov.github.io/website',
+      'websiteUrl': 'http://oleksandrstepanov.github.io/webweather',
       'cvUrl': 'https://drive.google.com/file/d/0B3ep8tPz75A1cWZ3bm5aMFk0RjA/view?usp=sharing ',
       photo: 'images/students/stepanov.jpg'
   },
