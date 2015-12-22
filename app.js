@@ -131,8 +131,8 @@ app.service('studentService', ['$q', function($q) {
       'subgroup': 1,
       'name': 'Vitalii Semeruk',
       'cvUrl': 'https://drive.google.com/drive/folders/0B8IuH1Cl2NqCcVRCZ3Vlbjd4SXM',
-      websiteUrl: 'https://github.com/Semeruk/wft/tree/gh-pages',
-      codeSourceUrl: 'http://semeruk.github.io/wft/',
+      websiteUrl: 'http://semeruk.github.io/wft/',
+      codeSourceUrl: 'https://github.com/Semeruk/wft/tree/gh-pages',
       photo: 'images/students/no-photo.gif'
   },
   {
