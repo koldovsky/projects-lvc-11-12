@@ -190,7 +190,8 @@ app.service('studentService', ['$q', function($q) {
   {
       'subgroup': 2,
       'name': 'Pavlo Bazyliuk',
-      'websiteUrl': 'http://pbazyliuk.github.io/weather-info-project',
+      'websiteUrl': 'http://pbazyliuk.github.io/weather-info-project-exam',
+      codeSourceUrl: 'https://github.com/pbazyliuk/weather-info-project-exam',
       photo: 'images/students/no-photo.gif'
   },
   {
