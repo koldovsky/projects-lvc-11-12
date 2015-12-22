@@ -62,6 +62,7 @@ app.service('studentService', ['$q', function($q) {
       'name': 'Dmytro Matiichuk',
       'codeSourceUrl': 'https://github.com/Dimas169/weather.html.git',
       'cvUrl': 'https://www.dropbox.com/s/szcu07gx9jhdq8v/CV_Matiichuk.pdf?dl=0',
+      websiteUrl: 'http://dimas169.github.io/weather.html',
       photo: 'images/students/matiichuk.png'
   },
   {
