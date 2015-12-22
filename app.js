@@ -69,6 +69,7 @@ app.service('studentService', ['$q', function($q) {
       'name': 'Iryna Dragan',
       'codeSourceUrl': 'http://github.com/iradragan/weather_project.git',
       'websiteUrl': 'http://iradragan.github.io/weather_project',
+      cvUrl: 'https://drive.google.com/file/d/0B_viaxA_dCT5UGJXZG94U0R1aXM/view?usp=sharing',
       photo: 'images/students/dragan-iryna.jpg'
   },
   {
