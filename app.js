@@ -153,8 +153,8 @@ app.service('studentService', ['$q', function($q) {
   {
       'subgroup': 2,
       'name': 'Valentyn Kravchenko',
-      'codeSourceUrl': 'https://github.com/valikwade/weather-project/tree/gh-pages',
-      'websiteUrl': 'http://valikwade.github.io/weather-project/',
+      'codeSourceUrl': 'https://github.com/kravchenkov/weather-project/tree/gh-pages',
+      'websiteUrl': 'http://kravchenkov.github.io/weather-project/',
       photo: 'images/students/kravchenko.jpg'
   },
   {
