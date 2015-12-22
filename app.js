@@ -77,6 +77,7 @@ app.service('studentService', ['$q', function($q) {
       'name': 'Marta Dropko',
       'codeSourceUrl': 'https://github.com/MartaDropko/webweatherforecast',
       'websiteUrl': 'http://webweatherforecast-martadropko.c9users.io/index.html',
+      cvUrl: 'https://www.dropbox.com/s/vif47n47pk5aeyi/Piven%20Maxym.pdf?dl=0',
       photo: 'images/students/dropko.jpg'
   },
   {
