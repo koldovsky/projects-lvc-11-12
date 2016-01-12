@@ -2,24 +2,41 @@ var app = angular.module('GroupApp', ['ngMaterial']);
 
 app.controller('AppCtrl', ['$scope', '$mdSidenav', 'studentService', function($scope, $mdSidenav, studentService) {
   var allStudents = [];
+
   
   $scope.subgroups = [1,2];
   $scope.selectedsubgroups = [1,2];
-  $scope.toggle = function (item, list) {
-    var idx = list.indexOf(item);
-    if (idx >-1) {
-      list.splice(idx, 1);
-    } else {
-      list.push(item);
-    }
-  };
+  $scope.isChosenOnly = true;
+  //$scope.toggle = function (item, list) {
+  //  var idx = list.indexOf(item);
+  //  if (idx >-1) {
+  //    list.splice(idx, 1);
+  //  } else {
+  //    list.push(item);
+  //  }
+  //};
   $scope.exists = function(item, list) {
     return list.indexOf(item) > -1;
   };
-
-    $scope.filterBySubgroup = function (student) {
-        return $scope.exists(student.subgroup, $scope.selectedsubgroups);
+    $scope.toggleChosen = function (item) {
+        $scope.isChosenOnly = !$scope.isChosenOnly;
     };
+  //$scope.filterBySubgroup = function (student) {
+  //  return $scope.exists(student.subgroup, $scope.selectedsubgroups);
+  //};
+
+  $scope.filterByChosen = function(student) {
+      if ($scope.isChosenOnly) {
+          if (student.isChosenProject) {
+              console.log(student);
+              return true;
+          } else {
+              return false;
+          }
+      } else {
+          return true;
+      }
+  };
   
   $scope.selected = null;
   $scope.students = allStudents;
@@ -55,7 +72,8 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'https://github.com/anastasiagoncharova/Myweather',
       'websiteUrl': 'http://anastasiagoncharova.github.io/Myweather/',
       'cvUrl': 'https://www.dropbox.com/s/oguwlvthzcqmtbv/Goncharova_CV.pdf?dl=0',
-      photo: 'images/students/goncharova.jpg'
+      photo: 'images/students/goncharova.jpg',
+      isChosenProject: true
   },
   {
       'subgroup': 1,
@@ -63,7 +81,8 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'https://github.com/Dimas169/weather.html.git',
       'cvUrl': 'https://www.dropbox.com/s/szcu07gx9jhdq8v/CV_Matiichuk.pdf?dl=0',
       websiteUrl: 'http://dimas169.github.io/weather.html',
-      photo: 'images/students/matiichuk.png'
+      photo: 'images/students/matiichuk.png',
+      isChosenProject: false
   },
   {
       'subgroup': 1,
@@ -71,7 +90,8 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'http://github.com/iradragan/weather_project.git',
       'websiteUrl': 'http://iradragan.github.io/weather_project',
       cvUrl: 'https://drive.google.com/file/d/0B_viaxA_dCT5UGJXZG94U0R1aXM/view?usp=sharing',
-      photo: 'images/students/dragan-iryna.jpg'
+      photo: 'images/students/dragan-iryna.jpg',
+      isChosenProject: false
   },
   {
       'subgroup': 1,
@@ -87,7 +107,8 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'https://github.com/justmax01/samplesite/tree/gh-pages',
       'websiteUrl': 'http://justmax01.github.io/samplesite/',
       'cvUrl': 'https://www.dropbox.com/s/vif47n47pk5aeyi/Piven%20Maxym.pdf?dl=0',
-      photo: 'images/students/piven.jpg'
+      photo: 'images/students/piven.jpg',
+      //isChosenProject: true
   },
   {
       'subgroup': 1,
@@ -95,7 +116,8 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'https://github.com/nadinn20/website/blob/gh-pages/index.html',
       'websiteUrl': 'http://nadinn20.github.io/weather-forecast',
       'cvUrl': 'https://drive.google.com/drive/folders/0BwII8zRpmyg5RVBUNjFvT1kyT1k',
-      photo: 'images/students/shpytkovska.jpg'
+      photo: 'images/students/shpytkovska.jpg',
+      isChosenProject: true
   },
   {
       'subgroup': 1,
@@ -118,14 +140,16 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'https://github.com/IgorZayats/MyWeather.git',
       'websiteUrl': 'http://igorzayats.github.io/MyWeather',
       'cvUrl': 'https://www.dropbox.com/s/1t1ggxw7mkrdxt6/ZayacIM.pdf?dl=0',
-      photo: 'images/students/zaiats.jpg'
+      photo: 'images/students/zaiats.jpg',
+      isChosenProject: true
   },
   {
       'subgroup': 1,
       'name': 'Volodymyr Gladiuk',
       'codeSourceUrl': 'https://github.com/glvolodia/samplewebsite',
       'websiteUrl': 'http://glvolodia.github.io/samplewebsite',
-      photo: 'images/students/gladiuk.jpg'
+      photo: 'images/students/gladiuk.jpg',
+      isChosenProject: true
   },
   {
       'subgroup': 1,
@@ -133,7 +157,8 @@ app.service('studentService', ['$q', function($q) {
       'cvUrl': 'https://drive.google.com/drive/folders/0B8IuH1Cl2NqCcVRCZ3Vlbjd4SXM',
       websiteUrl: 'http://semeruk.github.io/wft/',
       codeSourceUrl: 'https://github.com/Semeruk/wft/tree/gh-pages',
-      photo: 'images/students/no-photo.gif'
+      photo: 'images/students/semeruk.jpg',
+      isChosenProject: true
   },
   {
       'subgroup': 1,
@@ -141,21 +166,24 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'https://github.com/Vasylyna199377/sample',
       'websiteUrl': 'http://vasylyna199377.github.io/sample',
       'cvUrl': 'https://www.dropbox.com/s/vgrrj6slhpdq98z/Vasylyna%20Bukartyk.pdf?dl=0',
-      photo: 'images/students/bukartyk.jpg'
+      photo: 'images/students/bukartyk.jpg',
+      //isChosenProject: true
   },
   {
       'subgroup': 2,
       'name': 'Vasyl Kozhushko',
       'codeSourceUrl': 'https://github.com/AlexK89/newwebsite/tree/gh-pages',
       'websiteUrl': 'http://alexk89.github.io/Weather-Project/',
-      photo: 'images/students/kozhushko.jpg'
+      photo: 'images/students/kozhushko.jpg',
+      isChosenProject: true
   },
   {
       'subgroup': 2,
       'name': 'Valentyn Kravchenko',
       'codeSourceUrl': 'https://github.com/kravchenkov/weather-project/tree/gh-pages',
       'websiteUrl': 'http://kravchenkov.github.io/weather-project/',
-      photo: 'images/students/kravchenko.jpg'
+      photo: 'images/students/kravchenko.jpg',
+      isChosenProject: true
   },
   {
       'subgroup': 2,
@@ -170,7 +198,8 @@ app.service('studentService', ['$q', function($q) {
       'name': 'Roman Golovatyi',
       'codeSourceUrl': 'https://github.com/SidiromUA/weather/tree/gh-pages',
       'websiteUrl': 'http://sidiromua.github.io/firstproject/index.html',
-      photo: 'images/students/golovatiy.jpg'
+      photo: 'images/students/golovatiy.jpg',
+      //isChosenProject: true
   },
   {
       'subgroup': 2,
@@ -192,7 +221,8 @@ app.service('studentService', ['$q', function($q) {
       'name': 'Pavlo Bazyliuk',
       'websiteUrl': 'http://pbazyliuk.github.io/weather-info-project-exam',
       codeSourceUrl: 'https://github.com/pbazyliuk/weather-info-project-exam',
-      photo: 'images/students/no-photo.gif'
+      photo: 'images/students/sheremeta.jpg',
+      //isChosenProject: true
   },
   {
       'subgroup': 2,
@@ -200,7 +230,8 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'https://github.com/romko43/forecast/tree/gh-pages',
       'websiteUrl': 'http://romko43.github.io/forecast/',
       'cvUrl': 'https://drive.google.com/file/d/0BwBtgDApqUiSOVRtOGl5YWotYmM/view?usp=sharing',
-      photo: 'images/students/kuchkuda.jpg'
+      photo: 'images/students/kuchkuda.jpg',
+      isChosenProject: true
   },
   {
       'subgroup': 2,
@@ -208,7 +239,8 @@ app.service('studentService', ['$q', function($q) {
       'codeSourceUrl': 'https://github.com/raamon15/first_website',
       'websiteUrl': 'http://raamon15.github.io/first_website',
       'cvUrl': 'https://drive.google.com/open?id=0Bw7RVE2X_29gS1JSU1JrVFhrbVE',
-      photo: 'images/students/bregei.png'
+      photo: 'images/students/bregei.png',
+      isChosenProject: true
   },
   {
       'subgroup': 2,
