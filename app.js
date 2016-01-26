@@ -214,14 +214,14 @@ app.service('studentService', ['$q', function($q) {
       'name': 'Olia Sheremeta',
       'codeSourceUrl': 'https://github.com/ollllla/website/tree/gh-pages',
       'websiteUrl': 'http://ollllla.github.io/website',
-      photo: 'images/students/no-photo.gif'
+      photo: 'images/students/sheremeta.jpg'
   },
   {
       'subgroup': 2,
       'name': 'Pavlo Bazyliuk',
       'websiteUrl': 'http://pbazyliuk.github.io/weather-info-project-exam',
       codeSourceUrl: 'https://github.com/pbazyliuk/weather-info-project-exam',
-      photo: 'images/students/sheremeta.jpg',
+      photo: 'images/students/no-photo.gif',
       //isChosenProject: true
   },
   {
